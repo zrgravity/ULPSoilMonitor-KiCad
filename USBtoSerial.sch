@@ -1,0 +1,394 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5EFD2D90
+P 2500 1800
+AR Path="/5EFD2D90" Ref="J?"  Part="1" 
+AR Path="/5EFCE977/5EFD2D90" Ref="J7"  Part="1" 
+F 0 "J7" H 2557 2267 50  0000 C CNN
+F 1 "USB_B_Micro" H 2557 2176 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 2650 1750 50  0001 C CNN
+F 3 "~" H 2650 1750 50  0001 C CNN
+	1    2500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5EFD2D96
+P 2900 1500
+AR Path="/5EFD2D96" Ref="#PWR?"  Part="1" 
+AR Path="/5EFCE977/5EFD2D96" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 2900 1350 50  0001 C CNN
+F 1 "VBUS" H 2915 1673 50  0000 C CNN
+F 2 "" H 2900 1500 50  0001 C CNN
+F 3 "" H 2900 1500 50  0001 C CNN
+	1    2900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1600 2900 1600
+Wire Wire Line
+	2900 1600 2900 1500
+Wire Wire Line
+	2400 2200 2400 2300
+Wire Wire Line
+	2400 2300 2450 2300
+Wire Wire Line
+	2500 2300 2500 2200
+$Comp
+L power:GND #PWR?
+U 1 1 5EFD2DA3
+P 2450 2400
+AR Path="/5EFD2DA3" Ref="#PWR?"  Part="1" 
+AR Path="/5EFCE977/5EFD2DA3" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 2450 2150 50  0001 C CNN
+F 1 "GND" H 2455 2227 50  0000 C CNN
+F 2 "" H 2450 2400 50  0001 C CNN
+F 3 "" H 2450 2400 50  0001 C CNN
+	1    2450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2400 2450 2300
+Connection ~ 2450 2300
+Wire Wire Line
+	2450 2300 2500 2300
+$Comp
+L Device:R R?
+U 1 1 5EFD2DAC
+P 3650 1900
+AR Path="/5EFD2DAC" Ref="R?"  Part="1" 
+AR Path="/5EFCE977/5EFD2DAC" Ref="R20"  Part="1" 
+F 0 "R20" V 3857 1900 50  0000 C CNN
+F 1 "27R" V 3766 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3580 1900 50  0001 C CNN
+F 3 "~" H 3650 1900 50  0001 C CNN
+	1    3650 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFD2DB2
+P 3650 1800
+AR Path="/5EFD2DB2" Ref="R?"  Part="1" 
+AR Path="/5EFCE977/5EFD2DB2" Ref="R19"  Part="1" 
+F 0 "R19" V 3857 1800 50  0000 C CNN
+F 1 "27R" V 3766 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3580 1800 50  0001 C CNN
+F 3 "~" H 3650 1800 50  0001 C CNN
+	1    3650 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 1800 3000 1800
+Wire Wire Line
+	3500 1900 3300 1900
+Wire Wire Line
+	3800 1800 3900 1800
+Wire Wire Line
+	3900 1900 3800 1900
+NoConn ~ 2800 2000
+$Comp
+L Device:C C?
+U 1 1 5EFD2DBD
+P 3300 2250
+AR Path="/5EFD2DBD" Ref="C?"  Part="1" 
+AR Path="/5EFCE977/5EFD2DBD" Ref="C9"  Part="1" 
+F 0 "C9" H 3415 2296 50  0000 L CNN
+F 1 "47pF" H 3415 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3338 2100 50  0001 C CNN
+F 3 "~" H 3300 2250 50  0001 C CNN
+	1    3300 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1800 3000 2100
+Connection ~ 3000 1800
+Wire Wire Line
+	3000 1800 3500 1800
+Wire Wire Line
+	3300 1900 3300 2100
+Connection ~ 3300 1900
+Wire Wire Line
+	3300 1900 2800 1900
+$Comp
+L Device:C C?
+U 1 1 5EFD2DC9
+P 3000 2250
+AR Path="/5EFD2DC9" Ref="C?"  Part="1" 
+AR Path="/5EFCE977/5EFD2DC9" Ref="C8"  Part="1" 
+F 0 "C8" H 2800 2300 50  0000 L CNN
+F 1 "47pF" H 2700 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3038 2100 50  0001 C CNN
+F 3 "~" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2400 3000 2500
+Wire Wire Line
+	3000 2500 3150 2500
+Wire Wire Line
+	3300 2500 3300 2400
+$Comp
+L power:GND #PWR?
+U 1 1 5EFD2DD2
+P 3150 2600
+AR Path="/5EFD2DD2" Ref="#PWR?"  Part="1" 
+AR Path="/5EFCE977/5EFD2DD2" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 3150 2350 50  0001 C CNN
+F 1 "GND" H 3155 2427 50  0000 C CNN
+F 2 "" H 3150 2600 50  0001 C CNN
+F 3 "" H 3150 2600 50  0001 C CNN
+	1    3150 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2500 3150 2600
+Connection ~ 3150 2500
+Wire Wire Line
+	3150 2500 3300 2500
+$Comp
+L Device:C C?
+U 1 1 5EFD2DDB
+P 1900 1850
+AR Path="/5EFD2DDB" Ref="C?"  Part="1" 
+AR Path="/5EFCE977/5EFD2DDB" Ref="C7"  Part="1" 
+F 0 "C7" H 2015 1896 50  0000 L CNN
+F 1 "10nF" H 2015 1805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1938 1700 50  0001 C CNN
+F 3 "~" H 1900 1850 50  0001 C CNN
+	1    1900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 5EFD2DE1
+P 1900 1600
+AR Path="/5EFD2DE1" Ref="#PWR?"  Part="1" 
+AR Path="/5EFCE977/5EFD2DE1" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 1900 1450 50  0001 C CNN
+F 1 "VBUS" H 1915 1773 50  0000 C CNN
+F 2 "" H 1900 1600 50  0001 C CNN
+F 3 "" H 1900 1600 50  0001 C CNN
+	1    1900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EFD2DE7
+P 1900 2100
+AR Path="/5EFD2DE7" Ref="#PWR?"  Part="1" 
+AR Path="/5EFCE977/5EFD2DE7" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 1900 1850 50  0001 C CNN
+F 1 "GND" H 1905 1927 50  0000 C CNN
+F 2 "" H 1900 2100 50  0001 C CNN
+F 3 "" H 1900 2100 50  0001 C CNN
+	1    1900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1600 1900 1700
+Wire Wire Line
+	1900 2000 1900 2100
+Text GLabel 3900 1900 2    50   Input ~ 0
+D-
+Text GLabel 3900 1800 2    50   Input ~ 0
+D+
+$Comp
+L power:VBUS #PWR042
+U 1 1 5EFD3899
+P 1200 1900
+F 0 "#PWR042" H 1200 1750 50  0001 C CNN
+F 1 "VBUS" H 1215 2073 50  0000 C CNN
+F 2 "" H 1200 1900 50  0001 C CNN
+F 3 "" H 1200 1900 50  0001 C CNN
+	1    1200 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EFD3BDC
+P 1400 1900
+AR Path="/5EFD3BDC" Ref="#PWR?"  Part="1" 
+AR Path="/5EFCE977/5EFD3BDC" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 1400 1650 50  0001 C CNN
+F 1 "GND" H 1405 1727 50  0000 C CNN
+F 2 "" H 1400 1900 50  0001 C CNN
+F 3 "" H 1400 1900 50  0001 C CNN
+	1    1400 1900
+	1    0    0    -1  
+$EndComp
+Text HLabel 1400 1800 1    50   Input ~ 0
+GND
+Text HLabel 1200 1800 1    50   Output ~ 0
+VBUS
+Wire Wire Line
+	1200 1800 1200 1900
+Wire Wire Line
+	1400 1800 1400 1900
+Wire Wire Line
+	5750 950  5750 1100
+Wire Wire Line
+	4600 2000 4600 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5EFDB96D
+P 4600 2750
+AR Path="/5EFDB96D" Ref="#PWR?"  Part="1" 
+AR Path="/5EFCE977/5EFDB96D" Ref="#PWR047"  Part="1" 
+F 0 "#PWR047" H 4600 2500 50  0001 C CNN
+F 1 "GND" H 4605 2577 50  0000 C CNN
+F 2 "" H 4600 2750 50  0001 C CNN
+F 3 "" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EFDB973
+P 4600 2400
+AR Path="/5EFDB973" Ref="C?"  Part="1" 
+AR Path="/5EFCE977/5EFDB973" Ref="C10"  Part="1" 
+F 0 "C10" H 4715 2446 50  0000 L CNN
+F 1 "100nF" H 4715 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4638 2250 50  0001 C CNN
+F 3 "~" H 4600 2400 50  0001 C CNN
+	1    4600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2000 4600 2250
+Connection ~ 4600 2000
+Wire Wire Line
+	6350 1400 6550 1400
+Wire Wire Line
+	6550 1500 6350 1500
+Wire Wire Line
+	6350 1600 6550 1600
+Wire Wire Line
+	4600 2550 4600 2750
+Text GLabel 4850 1800 0    50   Input ~ 0
+D+
+Text GLabel 4850 1700 0    50   Input ~ 0
+D-
+Wire Wire Line
+	4850 1700 4950 1700
+Wire Wire Line
+	4950 1800 4850 1800
+Connection ~ 4600 1400
+Wire Wire Line
+	4600 2000 4950 2000
+Wire Wire Line
+	4600 1400 4600 950 
+Wire Wire Line
+	4600 1400 4950 1400
+$Comp
+L power:VBUS #PWR?
+U 1 1 5EFDB991
+P 5550 850
+AR Path="/5EFDB991" Ref="#PWR?"  Part="1" 
+AR Path="/5EFCE977/5EFDB991" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 5550 700 50  0001 C CNN
+F 1 "VBUS" H 5565 1023 50  0000 C CNN
+F 2 "" H 5550 850 50  0001 C CNN
+F 3 "" H 5550 850 50  0001 C CNN
+	1    5550 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 850  5550 1100
+$Comp
+L power:GND #PWR?
+U 1 1 5EFDB998
+P 5750 3100
+AR Path="/5EFDB998" Ref="#PWR?"  Part="1" 
+AR Path="/5EFCE977/5EFDB998" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 5750 2850 50  0001 C CNN
+F 1 "GND" H 5755 2927 50  0000 C CNN
+F 2 "" H 5750 3100 50  0001 C CNN
+F 3 "" H 5750 3100 50  0001 C CNN
+	1    5750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 2900 5550 3000
+Wire Wire Line
+	5550 3000 5750 3000
+Wire Wire Line
+	5750 3000 5750 2900
+Wire Wire Line
+	5750 3000 5750 3100
+Connection ~ 5750 3000
+Wire Wire Line
+	6350 1800 6550 1800
+Text HLabel 6550 1400 2    50   Output ~ 0
+TXD
+Text HLabel 6550 1500 2    50   Input ~ 0
+RXD
+Text HLabel 6550 1600 2    50   Output ~ 0
+RTS
+Text HLabel 6550 1800 2    50   Output ~ 0
+DTR
+Text HLabel 6550 1700 2    50   Input ~ 0
+CTS
+Text HLabel 6550 1900 2    50   Input ~ 0
+DSR
+Text HLabel 6550 2100 2    50   Input ~ 0
+RI
+Text HLabel 6550 2000 2    50   Input ~ 0
+DCD
+Text HLabel 6550 2300 2    50   BiDi ~ 0
+CBUS0
+Text HLabel 6550 2400 2    50   BiDi ~ 0
+CBUS1
+Text HLabel 6550 2500 2    50   BiDi ~ 0
+CBUS2
+Text HLabel 6550 2600 2    50   BiDi ~ 0
+CBUS3
+$Comp
+L Interface_USB:FT231XS U?
+U 1 1 5EFDB981
+P 5650 2000
+AR Path="/5EFDB981" Ref="U?"  Part="1" 
+AR Path="/5EFCE977/5EFDB981" Ref="U3"  Part="1" 
+F 0 "U3" H 5650 3081 50  0000 C CNN
+F 1 "FT231XS" H 5650 2990 50  0000 C CNN
+F 2 "Package_SO:QSOP-20_3.9x8.7mm_P0.635mm" H 6650 1200 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf" H 5650 2000 50  0001 C CNN
+	1    5650 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 950  5750 950 
+Wire Wire Line
+	6350 1700 6550 1700
+Wire Wire Line
+	6350 1900 6550 1900
+Wire Wire Line
+	6350 2000 6550 2000
+Wire Wire Line
+	6350 2100 6550 2100
+Wire Wire Line
+	6350 2300 6550 2300
+Wire Wire Line
+	6350 2400 6550 2400
+Wire Wire Line
+	6350 2500 6550 2500
+Wire Wire Line
+	6350 2600 6550 2600
+$EndSCHEMATC
