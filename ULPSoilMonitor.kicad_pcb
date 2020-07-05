@@ -12,14 +12,14 @@
   (page A4)
   (title_block
     (title ULPSoilMonitor)
-    (date 2020-06-26)
-    (rev v2.1)
+    (date 2020-07-05)
+    (rev v2.2)
     (company Flobs)
   )
 
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -2843,7 +2843,7 @@
     )
   )
 
-  (gr_text "Flobs ULPSoilMonitor v2.1\n2020-06-26" (at 63 85.8 90) (layer F.SilkS)
+  (gr_text "Flobs ULPSoilMonitor v2.2\n2020-07-05" (at 63 85.8 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.25)))
   )
   (gr_line (start 65.6 28.25) (end 38.5 28.25) (layer Edge.Cuts) (width 0.05) (tstamp 5EC04D07))
