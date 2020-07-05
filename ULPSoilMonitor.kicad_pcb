@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 7)
+    (drawings 5)
     (tracks 553)
     (zones 0)
     (modules 62)
@@ -2843,12 +2843,6 @@
     )
   )
 
-  (gr_text "BAT\n" (at 39.65 77.2 90) (layer F.SilkS) (tstamp 5EC1CE4C)
-    (effects (font (size 0.75 0.75) (thickness 0.15)))
-  )
-  (gr_text USB (at 39.7 72.1 90) (layer F.SilkS) (tstamp 5EC1CDDB)
-    (effects (font (size 0.75 0.75) (thickness 0.15)))
-  )
   (gr_text "Flobs ULPSoilMonitor v2.1\n2020-06-26" (at 63 85.8 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.25)))
   )
