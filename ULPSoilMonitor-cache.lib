@@ -1,6 +1,27 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 0-GIE_Connector_Debug_Conn_ESP_PROG_1.27mm_TagConnect
+#
+DEF 0-GIE_Connector_Debug_Conn_ESP_PROG_1.27mm_TagConnect J 0 40 Y Y 1 F N
+F0 "J" 50 200 50 H V C CNN
+F1 "0-GIE_Connector_Debug_Conn_ESP_PROG_1.27mm_TagConnect" 50 -200 50 H V C CNN
+F2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" 50 -300 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -400 150 400 -150 1 1 10 f
+X ESP_EN 1 -550 100 150 R 50 50 1 1 O
+X VDD 2 550 100 150 L 50 50 1 1 w
+X ESP_TXD 3 -550 0 150 R 50 50 1 1 I
+X GND 4 550 0 150 L 50 50 1 1 w
+X ESP_RXD 5 -550 -100 150 R 50 50 1 1 O
+X ESP_IO0 6 550 -100 150 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
 # 0-GIE_Connector_Debug_USB_C_Receptacle_PowerOnly
 #
 DEF 0-GIE_Connector_Debug_USB_C_Receptacle_PowerOnly J 0 40 Y Y 1 F N

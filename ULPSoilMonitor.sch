@@ -736,8 +736,6 @@ Wire Wire Line
 	9650 4900 9400 4900
 Text GLabel 9650 4300 1    50   Input ~ 0
 PROG
-Wire Wire Line
-	9900 5700 9900 5500
 $Comp
 L power:+BATT #PWR0112
 U 1 1 5EF7A415
@@ -769,8 +767,6 @@ F 3 "~" H 9900 5900 50  0001 C CNN
 	1    9900 5900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9900 5750 9900 5700
 $Comp
 L Device:R R24
 U 1 1 5F02346F
@@ -903,4 +899,49 @@ Wire Wire Line
 	9900 6050 9900 6200
 Wire Wire Line
 	9400 5300 9400 5600
+$Comp
+L 0-GIE_Connector_Debug:Conn_ESP_PROG_1.27mm_TagConnect J7
+U 1 1 6067D97D
+P 5100 5200
+F 0 "J7" H 5100 5525 50  0000 C CNN
+F 1 "Conn_ESP_PROG_1.27mm_TagConnect" H 5100 5434 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 5150 4900 50  0001 C CNN
+F 3 "~" H 5100 5200 50  0001 C CNN
+	1    5100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 6067ECC5
+P 5950 5200
+F 0 "#PWR0108" H 5950 4950 50  0001 C CNN
+F 1 "GND" H 5955 5027 50  0000 C CNN
+F 2 "" H 5950 5200 50  0001 C CNN
+F 3 "" H 5950 5200 50  0001 C CNN
+	1    5950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5200 5950 5200
+Wire Wire Line
+	9900 5500 9900 5750
+Text GLabel 5650 5300 2    50   Input ~ 0
+IO0
+$Comp
+L power:VCC #PWR0109
+U 1 1 6068214D
+P 5650 5100
+F 0 "#PWR0109" H 5650 4950 50  0001 C CNN
+F 1 "VCC" H 5667 5273 50  0000 C CNN
+F 2 "" H 5650 5100 50  0001 C CNN
+F 3 "" H 5650 5100 50  0001 C CNN
+	1    5650 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4550 5200 0    50   Input ~ 0
+ESPTX
+Text GLabel 4550 5300 0    50   Input ~ 0
+ESPRX
+Text GLabel 4550 5100 0    50   Input ~ 0
+EN
 $EndSCHEMATC
