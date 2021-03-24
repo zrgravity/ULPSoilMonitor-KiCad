@@ -1021,4 +1021,92 @@ Wire Wire Line
 Connection ~ 9400 5900
 Wire Wire Line
 	9400 5900 9400 6200
+$Comp
+L 0-GIE_Connector_Debug:USB_C_Receptacle_PowerOnly J?
+U 1 1 60612B67
+P 8500 1300
+F 0 "J?" H 8607 1817 50  0000 C CNN
+F 1 "USB_C_Receptacle_PowerOnly" H 8607 1726 50  0000 C CNN
+F 2 "0 - GIE Connectors, Terminal Blocks:TYPE-C-31-M-17.kicad_mod" H 8650 1800 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8650 1300 50  0001 C CNN
+	1    8500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60613D10
+P 8200 2100
+F 0 "#PWR?" H 8200 1850 50  0001 C CNN
+F 1 "GND" H 8205 1927 50  0000 C CNN
+F 2 "" H 8200 2100 50  0001 C CNN
+F 3 "" H 8200 2100 50  0001 C CNN
+	1    8200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60614146
+P 8500 2100
+F 0 "#PWR?" H 8500 1850 50  0001 C CNN
+F 1 "GND" H 8505 1927 50  0000 C CNN
+F 2 "" H 8500 2100 50  0001 C CNN
+F 3 "" H 8500 2100 50  0001 C CNN
+	1    8500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR?
+U 1 1 6061444E
+P 9100 1150
+F 0 "#PWR?" H 9100 1000 50  0001 C CNN
+F 1 "VBUS" H 9115 1323 50  0000 C CNN
+F 2 "" H 9100 1150 50  0001 C CNN
+F 3 "" H 9100 1150 50  0001 C CNN
+	1    9100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60614C20
+P 9250 1350
+F 0 "R?" H 9320 1396 50  0000 L CNN
+F 1 "5.1k 10%" H 9320 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9180 1350 50  0001 C CNN
+F 3 "~" H 9250 1350 50  0001 C CNN
+F 4 "C17513" H 9250 1350 50  0001 C CNN "LCSC"
+	1    9250 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60615957
+P 9250 1450
+F 0 "R?" H 9320 1496 50  0000 L CNN
+F 1 "5.1k 10%" H 9320 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9180 1450 50  0001 C CNN
+F 3 "~" H 9250 1450 50  0001 C CNN
+F 4 "C17513" H 9250 1450 50  0001 C CNN "LCSC"
+	1    9250 1450
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60619E98
+P 9450 1500
+F 0 "#PWR?" H 9450 1250 50  0001 C CNN
+F 1 "GND" H 9455 1327 50  0000 C CNN
+F 2 "" H 9450 1500 50  0001 C CNN
+F 3 "" H 9450 1500 50  0001 C CNN
+	1    9450 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 1500 9450 1450
+Wire Wire Line
+	9450 1450 9400 1450
+Wire Wire Line
+	9400 1350 9450 1350
+Wire Wire Line
+	9450 1350 9450 1450
+Connection ~ 9450 1450
 $EndSCHEMATC
