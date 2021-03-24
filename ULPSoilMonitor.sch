@@ -845,6 +845,7 @@ F 1 "MMDT3904" H 9691 5555 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 9700 5700 50  0001 C CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds30088.pdf" H 9500 5600 50  0001 C CNN
 F 4 "C155305" H 9500 5600 50  0001 C CNN "LCSC"
+F 5 "DNP" H 9700 5700 50  0000 C CNN "DNP"
 	1    9500 5600
 	-1   0    0    -1  
 $EndComp
@@ -857,23 +858,12 @@ F 1 "MMDT3904" H 10191 5855 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 10200 6000 50  0001 C CNN
 F 3 "http://www.diodes.com/_files/datasheets/ds30088.pdf" H 10000 5900 50  0001 C CNN
 F 4 "C155305" H 10000 5900 50  0001 C CNN "LCSC"
+F 5 "DNP" H 10200 6000 50  0000 C CNN "DNP"
 	2    10000 5900
 	-1   0    0    -1  
 $EndComp
 Text GLabel 10300 5600 2    50   Input ~ 0
 CHR0
-$Comp
-L Device:R R24
-U 1 1 5F02346F
-P 9400 5150
-F 0 "R24" H 9470 5196 50  0000 L CNN
-F 1 "3k9" H 9470 5105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 5150 50  0001 C CNN
-F 3 "~" H 9400 5150 50  0001 C CNN
-F 4 "C17614" H 9400 5150 50  0001 C CNN "LCSC"
-	1    9400 5150
-	1    0    0    -1  
-$EndComp
 Text GLabel 10300 5900 2    50   Input ~ 0
 CHR1
 $Comp
@@ -888,7 +878,7 @@ F 3 "" H 9650 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 5800 9400 6200
+	9400 5800 9400 5900
 Wire Wire Line
 	9400 6200 9650 6200
 Wire Wire Line
@@ -928,6 +918,7 @@ F 1 "BC817" H 9941 4555 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9950 4525 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 9750 4600 50  0001 L CNN
 F 4 "C118725" H 9750 4600 50  0001 C CNN "LCSC"
+F 5 "DNP" H 9950 4700 50  0000 C CNN "DNP"
 	1    9750 4600
 	-1   0    0    -1  
 $EndComp
@@ -955,4 +946,79 @@ Wire Wire Line
 Connection ~ 1750 1050
 Wire Wire Line
 	1750 1050 1500 1050
+Text Notes 9350 3600 0    50   ~ 0
+Set charging current (CP2102N)\nCHREN: 100mA\nCHR0: 500mA (3.9k -> 300mA)\nCHR1: 1.5A (2.37k ->500mA)\n\nOverride pads: \n500mA
+$Comp
+L 0-GIE_SMD_Jumpers:SolderJumper_2_Open JP1
+U 1 1 605B68DB
+P 9200 4600
+F 0 "JP1" V 9154 4668 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 9245 4668 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9200 4600 50  0001 C CNN
+F 3 "~" H 9200 4600 50  0001 C CNN
+	1    9200 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L 0-GIE_SMD_Jumpers:SolderJumper_2_Open JP2
+U 1 1 605B8584
+P 10750 5950
+F 0 "JP2" V 10750 6018 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 10795 6018 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 10750 5950 50  0001 C CNN
+F 3 "~" H 10750 5950 50  0001 C CNN
+	1    10750 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 4400 9200 4400
+Wire Wire Line
+	9200 4400 9200 4450
+Connection ~ 9650 4400
+Wire Wire Line
+	9200 4750 9200 4800
+Wire Wire Line
+	9200 4800 9650 4800
+Connection ~ 9650 4800
+Wire Wire Line
+	10750 5800 10750 5700
+Wire Wire Line
+	10750 5700 9900 5700
+Connection ~ 9900 5700
+Wire Wire Line
+	9900 6100 10750 6100
+Connection ~ 9900 6100
+$Comp
+L Device:R R24
+U 1 1 5F02346F
+P 9400 5150
+F 0 "R24" H 9470 5196 50  0000 L CNN
+F 1 "3k9" H 9470 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9330 5150 50  0001 C CNN
+F 3 "~" H 9400 5150 50  0001 C CNN
+F 4 "C17614" H 9400 5150 50  0001 C CNN "LCSC"
+	1    9400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0-GIE_SMD_Jumpers:SolderJumper_2_Open JP3
+U 1 1 605D5828
+P 8850 5750
+F 0 "JP3" V 8850 5818 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 8895 5818 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8850 5750 50  0001 C CNN
+F 3 "~" H 8850 5750 50  0001 C CNN
+	1    8850 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 5600 8850 5400
+Wire Wire Line
+	8850 5400 9400 5400
+Connection ~ 9400 5400
+Wire Wire Line
+	8850 5900 9400 5900
+Connection ~ 9400 5900
+Wire Wire Line
+	9400 5900 9400 6200
 $EndSCHEMATC
