@@ -15,61 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_B_Micro J?
-U 1 1 5EFD2D90
-P 2850 1800
-AR Path="/5EFD2D90" Ref="J?"  Part="1" 
-AR Path="/5EFCE977/5EFD2D90" Ref="J7"  Part="1" 
-F 0 "J7" H 2907 2267 50  0000 C CNN
-F 1 "USB_B_Micro" H 2907 2176 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 3000 1750 50  0001 C CNN
-F 3 "~" H 3000 1750 50  0001 C CNN
-F 4 "DNP" H 2850 2150 50  0000 C CNN "DNP"
-	1    2850 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR?
-U 1 1 5EFD2D96
-P 3250 1500
-AR Path="/5EFD2D96" Ref="#PWR?"  Part="1" 
-AR Path="/5EFCE977/5EFD2D96" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 3250 1350 50  0001 C CNN
-F 1 "VBUS" H 3265 1673 50  0000 C CNN
-F 2 "" H 3250 1500 50  0001 C CNN
-F 3 "" H 3250 1500 50  0001 C CNN
-	1    3250 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 1600 3250 1600
-Wire Wire Line
-	3250 1600 3250 1500
-Wire Wire Line
-	2750 2200 2750 2300
-Wire Wire Line
-	2750 2300 2800 2300
-Wire Wire Line
-	2850 2300 2850 2200
-$Comp
-L power:GND #PWR?
-U 1 1 5EFD2DA3
-P 2800 2400
-AR Path="/5EFD2DA3" Ref="#PWR?"  Part="1" 
-AR Path="/5EFCE977/5EFD2DA3" Ref="#PWR045"  Part="1" 
-F 0 "#PWR045" H 2800 2150 50  0001 C CNN
-F 1 "GND" H 2805 2227 50  0000 C CNN
-F 2 "" H 2800 2400 50  0001 C CNN
-F 3 "" H 2800 2400 50  0001 C CNN
-	1    2800 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 2400 2800 2300
-Connection ~ 2800 2300
-Wire Wire Line
-	2800 2300 2850 2300
-$Comp
 L Device:R R?
 U 1 1 5EFD2DAC
 P 4000 1900
@@ -100,14 +45,11 @@ F 5 "DNP" V 4000 1800 50  0000 C CNN "DNP"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3150 1800 3350 1800
-Wire Wire Line
 	3850 1900 3650 1900
 Wire Wire Line
 	4150 1800 4250 1800
 Wire Wire Line
 	4250 1900 4150 1900
-NoConn ~ 3150 2000
 $Comp
 L Device:C C?
 U 1 1 5EFD2DBD
@@ -125,14 +67,10 @@ F 5 "DNP" H 3650 2250 50  0000 C CNN "DNP"
 $EndComp
 Wire Wire Line
 	3350 1800 3350 2100
-Connection ~ 3350 1800
 Wire Wire Line
 	3350 1800 3850 1800
 Wire Wire Line
 	3650 1900 3650 2100
-Connection ~ 3650 1900
-Wire Wire Line
-	3650 1900 3150 1900
 $Comp
 L Device:C C?
 U 1 1 5EFD2DC9
