@@ -953,7 +953,7 @@ L 0-GIE_SMD_Jumpers:SolderJumper_2_Open JP1
 U 1 1 605B68DB
 P 9200 4600
 F 0 "JP1" V 9154 4668 50  0000 L CNN
-F 1 "SolderJumper_2_Open" V 9245 4668 50  0001 L CNN
+F 1 "Charg_enable" V 9245 4668 50  0001 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9200 4600 50  0001 C CNN
 F 3 "~" H 9200 4600 50  0001 C CNN
 	1    9200 4600
@@ -964,7 +964,7 @@ L 0-GIE_SMD_Jumpers:SolderJumper_2_Open JP2
 U 1 1 605B8584
 P 10750 5950
 F 0 "JP2" V 10750 6018 50  0000 L CNN
-F 1 "SolderJumper_2_Open" V 10795 6018 50  0001 L CNN
+F 1 "Charge_500mA" V 10795 6018 50  0001 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 10750 5950 50  0001 C CNN
 F 3 "~" H 10750 5950 50  0001 C CNN
 	1    10750 5950
@@ -1005,7 +1005,7 @@ L 0-GIE_SMD_Jumpers:SolderJumper_2_Open JP3
 U 1 1 605D5828
 P 8850 5750
 F 0 "JP3" V 8850 5818 50  0000 L CNN
-F 1 "SolderJumper_2_Open" V 8895 5818 50  0001 L CNN
+F 1 "Charge_300mA" V 8895 5818 50  0001 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8850 5750 50  0001 C CNN
 F 3 "~" H 8850 5750 50  0001 C CNN
 	1    8850 5750
