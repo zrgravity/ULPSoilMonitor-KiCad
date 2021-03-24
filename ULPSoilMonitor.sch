@@ -949,23 +949,23 @@ Wire Wire Line
 Text Notes 9350 3600 0    50   ~ 0
 Set charging current (CP2102N)\nCHREN: 100mA\nCHR0: 500mA (3.9k -> 300mA)\nCHR1: 1.5A (2.37k ->500mA)\n\nOverride pads: \n500mA
 $Comp
-L 0-GIE_SMD_Jumpers:SolderJumper_2_Open JP1
+L 0-GIE_SMD_Jumpers:SolderJumper_2_Bridged JP1
 U 1 1 605B68DB
 P 9200 4600
 F 0 "JP1" V 9154 4668 50  0000 L CNN
 F 1 "Charg_enable" V 9245 4668 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9200 4600 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 9200 4600 50  0001 C CNN
 F 3 "~" H 9200 4600 50  0001 C CNN
 	1    9200 4600
 	0    1    1    0   
 $EndComp
 $Comp
-L 0-GIE_SMD_Jumpers:SolderJumper_2_Open JP2
+L 0-GIE_SMD_Jumpers:SolderJumper_2_Bridged JP2
 U 1 1 605B8584
 P 10750 5950
 F 0 "JP2" V 10750 6018 50  0000 L CNN
 F 1 "Charge_500mA" V 10795 6018 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 10750 5950 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 10750 5950 50  0001 C CNN
 F 3 "~" H 10750 5950 50  0001 C CNN
 	1    10750 5950
 	0    1    1    0   
@@ -1022,10 +1022,10 @@ Connection ~ 9400 5900
 Wire Wire Line
 	9400 5900 9400 6200
 $Comp
-L 0-GIE_Connector_Debug:USB_C_Receptacle_PowerOnly J?
+L 0-GIE_Connector_Debug:USB_C_Receptacle_PowerOnly J9
 U 1 1 60612B67
 P 8500 1300
-F 0 "J?" H 8607 1817 50  0000 C CNN
+F 0 "J9" H 8607 1817 50  0000 C CNN
 F 1 "USB_C_Receptacle_PowerOnly" H 8607 1726 50  0000 C CNN
 F 2 "0 - GIE Connectors, Terminal Blocks:TYPE-C-31-M-17.kicad_mod" H 8650 1800 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8650 1300 50  0001 C CNN
@@ -1033,10 +1033,10 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8650 13
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0113
 U 1 1 60613D10
 P 8200 2100
-F 0 "#PWR?" H 8200 1850 50  0001 C CNN
+F 0 "#PWR0113" H 8200 1850 50  0001 C CNN
 F 1 "GND" H 8205 1927 50  0000 C CNN
 F 2 "" H 8200 2100 50  0001 C CNN
 F 3 "" H 8200 2100 50  0001 C CNN
@@ -1044,10 +1044,10 @@ F 3 "" H 8200 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0114
 U 1 1 60614146
 P 8500 2100
-F 0 "#PWR?" H 8500 1850 50  0001 C CNN
+F 0 "#PWR0114" H 8500 1850 50  0001 C CNN
 F 1 "GND" H 8505 1927 50  0000 C CNN
 F 2 "" H 8500 2100 50  0001 C CNN
 F 3 "" H 8500 2100 50  0001 C CNN
@@ -1055,10 +1055,10 @@ F 3 "" H 8500 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VBUS #PWR?
+L power:VBUS #PWR0115
 U 1 1 6061444E
 P 9100 1150
-F 0 "#PWR?" H 9100 1000 50  0001 C CNN
+F 0 "#PWR0115" H 9100 1000 50  0001 C CNN
 F 1 "VBUS" H 9115 1323 50  0000 C CNN
 F 2 "" H 9100 1150 50  0001 C CNN
 F 3 "" H 9100 1150 50  0001 C CNN
@@ -1066,10 +1066,10 @@ F 3 "" H 9100 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R31
 U 1 1 60614C20
 P 9250 1350
-F 0 "R?" H 9320 1396 50  0000 L CNN
+F 0 "R31" H 9320 1396 50  0000 L CNN
 F 1 "5.1k 10%" H 9320 1305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9180 1350 50  0001 C CNN
 F 3 "~" H 9250 1350 50  0001 C CNN
@@ -1078,10 +1078,10 @@ F 4 "C17513" H 9250 1350 50  0001 C CNN "LCSC"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R32
 U 1 1 60615957
 P 9250 1450
-F 0 "R?" H 9320 1496 50  0000 L CNN
+F 0 "R32" H 9320 1496 50  0000 L CNN
 F 1 "5.1k 10%" H 9320 1405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9180 1450 50  0001 C CNN
 F 3 "~" H 9250 1450 50  0001 C CNN
@@ -1090,10 +1090,10 @@ F 4 "C17513" H 9250 1450 50  0001 C CNN "LCSC"
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0116
 U 1 1 60619E98
 P 9450 1500
-F 0 "#PWR?" H 9450 1250 50  0001 C CNN
+F 0 "#PWR0116" H 9450 1250 50  0001 C CNN
 F 1 "GND" H 9455 1327 50  0000 C CNN
 F 2 "" H 9450 1500 50  0001 C CNN
 F 3 "" H 9450 1500 50  0001 C CNN
