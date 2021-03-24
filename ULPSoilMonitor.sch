@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 3
 Title "ULPSoilMonitor"
 Date "2020-06-26"
 Rev "v2.1"
@@ -59,24 +59,10 @@ Wire Wire Line
 	5700 1350 5850 1350
 Wire Wire Line
 	5850 1550 5700 1550
-Text GLabel 5800 5450 2    50   Input ~ 0
-ESPTX
-Text GLabel 5800 5350 2    50   Input ~ 0
-ESPRX
-Text GLabel 3000 6250 0    50   Input ~ 0
-EN
 Text GLabel 4300 1250 0    50   Input ~ 0
 EN
 Wire Wire Line
 	4300 1250 4500 1250
-Text GLabel 3750 6600 2    50   Input ~ 0
-RTS
-Text GLabel 3750 6500 2    50   Input ~ 0
-DTR
-Text GLabel 5800 5600 2    50   Input ~ 0
-RTS
-Text GLabel 5800 5700 2    50   Input ~ 0
-DTR
 Wire Wire Line
 	5700 3050 5850 3050
 Text GLabel 5850 2950 2    50   Input ~ 0
@@ -209,46 +195,6 @@ Wire Wire Line
 	1750 6600 1850 6600
 Wire Wire Line
 	1850 6600 1850 6850
-Wire Wire Line
-	5700 5100 5800 5100
-Wire Wire Line
-	5800 5100 5800 4900
-Wire Wire Line
-	5800 6700 5800 6450
-Wire Wire Line
-	5700 6450 5800 6450
-Wire Wire Line
-	5700 5350 5800 5350
-Wire Wire Line
-	5800 5450 5700 5450
-Wire Wire Line
-	5700 5600 5800 5600
-Wire Wire Line
-	5800 5700 5700 5700
-$Sheet
-S 3100 6150 550  550 
-U 5F0560DE
-F0 "ESPReset" 50
-F1 "ESPReset.sch" 50
-F2 "RESET" U L 3100 6250 50 
-F3 "PROGRAM" U L 3100 6350 50 
-F4 "DTR" I R 3650 6500 50 
-F5 "RTS" I R 3650 6600 50 
-$EndSheet
-Text GLabel 3000 6350 0    50   Input ~ 0
-IO0
-Wire Wire Line
-	3000 6250 3100 6250
-Wire Wire Line
-	3100 6350 3000 6350
-Wire Wire Line
-	3650 6500 3750 6500
-Wire Wire Line
-	3650 6600 3750 6600
-NoConn ~ 5700 5850
-NoConn ~ 5700 5950
-NoConn ~ 5700 6050
-NoConn ~ 5700 6150
 Text GLabel 5850 1650 2    50   Input ~ 0
 SDA
 Text GLabel 5850 1750 2    50   Input ~ 0
@@ -345,28 +291,6 @@ F 1 "GND" H 3755 5477 50  0000 C CNN
 F 2 "" H 3750 5650 50  0001 C CNN
 F 3 "" H 3750 5650 50  0001 C CNN
 	1    3750 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR022
-U 1 1 5F0039A2
-P 5800 6700
-F 0 "#PWR022" H 5800 6450 50  0001 C CNN
-F 1 "GND" H 5805 6527 50  0000 C CNN
-F 2 "" H 5800 6700 50  0001 C CNN
-F 3 "" H 5800 6700 50  0001 C CNN
-	1    5800 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR018
-U 1 1 5EFFC248
-P 5800 4900
-F 0 "#PWR018" H 5800 4750 50  0001 C CNN
-F 1 "VBUS" H 5815 5073 50  0000 C CNN
-F 2 "" H 5800 4900 50  0001 C CNN
-F 3 "" H 5800 4900 50  0001 C CNN
-	1    5800 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -612,59 +536,6 @@ F 3 "" H 6650 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 1000 6650 1100
-$Sheet
-S 4600 5000 1100 1550
-U 5EFCE977
-F0 "USBtoSerial" 50
-F1 "USBtoSerial.sch" 50
-F2 "GND" I R 5700 6450 50 
-F3 "VBUS" O R 5700 5100 50 
-F4 "TXD" O R 5700 5350 50 
-F5 "RXD" I R 5700 5450 50 
-F6 "~RTS" O R 5700 5600 50 
-F7 "~DTR" O R 5700 5700 50 
-F8 "~CTS" I R 5700 5850 50 
-F9 "~DSR" I R 5700 5950 50 
-F10 "~RI" I R 5700 6050 50 
-F11 "~DCD" I R 5700 6150 50 
-F12 "CHREN" B L 4600 5100 50 
-F13 "CHR0" B L 4600 5200 50 
-F14 "CHR1" B L 4600 5300 50 
-F15 "~TXT" B L 4600 5450 50 
-F16 "~RXT" B L 4600 5550 50 
-F17 "VDD" B R 5700 5200 50 
-F18 "RS485_GPIO2" B L 4600 5700 50 
-F19 "~WAKEUP_GPIO3" B L 4600 5800 50 
-F20 "GPIO4" B L 4600 5900 50 
-F21 "~RSTb" B L 4600 6250 50 
-F22 "~SUSPENDb" B L 4600 6350 50 
-F23 "SUSPEND" B L 4600 6450 50 
-F24 "GPIO5" B L 4600 6000 50 
-F25 "GPIO6" B L 4600 6100 50 
-$EndSheet
-NoConn ~ 4600 6450
-NoConn ~ 4600 6350
-NoConn ~ 4600 6250
-NoConn ~ 4600 6100
-NoConn ~ 4600 6000
-NoConn ~ 4600 5900
-NoConn ~ 4600 5800
-NoConn ~ 4600 5700
-NoConn ~ 4600 5550
-NoConn ~ 4600 5450
-NoConn ~ 5700 5200
-Text GLabel 4500 5100 0    50   Input ~ 0
-CHREN
-Text GLabel 4500 5200 0    50   Input ~ 0
-CHR0
-Text GLabel 4500 5300 0    50   Input ~ 0
-CHR1
-Wire Wire Line
-	4500 5100 4600 5100
-Wire Wire Line
-	4600 5200 4500 5200
-Wire Wire Line
-	4500 5300 4600 5300
 $Comp
 L ULPSoilMonitor-rescue:MCP73123-flobs-KiCad-lib U2
 U 1 1 5EFBF713
@@ -837,36 +708,6 @@ F 4 "C17523" H 9900 5350 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMDT3904 Q4
-U 1 1 5F018C0F
-P 9500 5600
-F 0 "Q4" H 9691 5646 50  0000 L CNN
-F 1 "MMDT3904" H 9691 5555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 9700 5700 50  0001 C CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds30088.pdf" H 9500 5600 50  0001 C CNN
-F 4 "C155305" H 9500 5600 50  0001 C CNN "LCSC"
-F 5 "DNP" H 9700 5700 50  0000 C CNN "DNP"
-	1    9500 5600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:MMDT3904 Q4
-U 2 1 5F019AA5
-P 10000 5900
-F 0 "Q4" H 10191 5946 50  0000 L CNN
-F 1 "MMDT3904" H 10191 5855 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 10200 6000 50  0001 C CNN
-F 3 "http://www.diodes.com/_files/datasheets/ds30088.pdf" H 10000 5900 50  0001 C CNN
-F 4 "C155305" H 10000 5900 50  0001 C CNN "LCSC"
-F 5 "DNP" H 10200 6000 50  0000 C CNN "DNP"
-	2    10000 5900
-	-1   0    0    -1  
-$EndComp
-Text GLabel 10300 5600 2    50   Input ~ 0
-CHR0
-Text GLabel 10300 5900 2    50   Input ~ 0
-CHR1
-$Comp
 L power:GND #PWR0107
 U 1 1 5F02E788
 P 9650 6300
@@ -878,26 +719,18 @@ F 3 "" H 9650 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 5800 9400 5900
-Wire Wire Line
 	9400 6200 9650 6200
 Wire Wire Line
 	9650 6200 9650 6300
 Wire Wire Line
-	9900 6100 9900 6200
-Wire Wire Line
 	9900 6200 9650 6200
 Connection ~ 9650 6200
-Wire Wire Line
-	9400 5400 9400 5300
 Wire Wire Line
 	9900 5200 9900 4900
 Wire Wire Line
 	9900 4900 9650 4900
 Wire Wire Line
 	9400 4900 9400 5000
-Wire Wire Line
-	9650 4900 9650 4800
 Connection ~ 9650 4900
 Wire Wire Line
 	9650 4900 9400 4900
@@ -905,29 +738,6 @@ Text GLabel 9650 4300 1    50   Input ~ 0
 PROG
 Wire Wire Line
 	9900 5700 9900 5500
-Wire Wire Line
-	10200 5900 10300 5900
-Wire Wire Line
-	9700 5600 10300 5600
-$Comp
-L Transistor_BJT:BC817 Q3
-U 1 1 5F0D63E8
-P 9750 4600
-F 0 "Q3" H 9941 4646 50  0000 L CNN
-F 1 "BC817" H 9941 4555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9950 4525 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 9750 4600 50  0001 L CNN
-F 4 "C118725" H 9750 4600 50  0001 C CNN "LCSC"
-F 5 "DNP" H 9950 4700 50  0000 C CNN "DNP"
-	1    9750 4600
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 4300 9650 4400
-Text GLabel 10050 4600 2    50   Input ~ 0
-CHREN
-Wire Wire Line
-	9950 4600 10050 4600
 $Comp
 L power:+BATT #PWR0112
 U 1 1 5EF7A415
@@ -949,45 +759,18 @@ Wire Wire Line
 Text Notes 9350 3600 0    50   ~ 0
 Set charging current (CP2102N)\nCHREN: 100mA\nCHR0: 500mA (3.9k -> 300mA)\nCHR1: 1.5A (2.37k ->500mA)\n\nOverride pads: \n500mA
 $Comp
-L 0-GIE_SMD_Jumpers:SolderJumper_2_Bridged JP1
-U 1 1 605B68DB
-P 9200 4600
-F 0 "JP1" V 9154 4668 50  0000 L CNN
-F 1 "Charg_enable" V 9245 4668 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 9200 4600 50  0001 C CNN
-F 3 "~" H 9200 4600 50  0001 C CNN
-	1    9200 4600
-	0    1    1    0   
-$EndComp
-$Comp
 L 0-GIE_SMD_Jumpers:SolderJumper_2_Bridged JP2
 U 1 1 605B8584
-P 10750 5950
-F 0 "JP2" V 10750 6018 50  0000 L CNN
-F 1 "Charge_500mA" V 10795 6018 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 10750 5950 50  0001 C CNN
-F 3 "~" H 10750 5950 50  0001 C CNN
-	1    10750 5950
+P 9900 5900
+F 0 "JP2" V 9900 5968 50  0000 L CNN
+F 1 "Charge_500mA" V 9945 5968 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 9900 5900 50  0001 C CNN
+F 3 "~" H 9900 5900 50  0001 C CNN
+	1    9900 5900
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9650 4400 9200 4400
-Wire Wire Line
-	9200 4400 9200 4450
-Connection ~ 9650 4400
-Wire Wire Line
-	9200 4750 9200 4800
-Wire Wire Line
-	9200 4800 9650 4800
-Connection ~ 9650 4800
-Wire Wire Line
-	10750 5800 10750 5700
-Wire Wire Line
-	10750 5700 9900 5700
-Connection ~ 9900 5700
-Wire Wire Line
-	9900 6100 10750 6100
-Connection ~ 9900 6100
+	9900 5750 9900 5700
 $Comp
 L Device:R R24
 U 1 1 5F02346F
@@ -1003,22 +786,14 @@ $EndComp
 $Comp
 L 0-GIE_SMD_Jumpers:SolderJumper_2_Open JP3
 U 1 1 605D5828
-P 8850 5750
-F 0 "JP3" V 8850 5818 50  0000 L CNN
-F 1 "Charge_300mA" V 8895 5818 50  0001 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8850 5750 50  0001 C CNN
-F 3 "~" H 8850 5750 50  0001 C CNN
-	1    8850 5750
+P 9400 5750
+F 0 "JP3" V 9400 5818 50  0000 L CNN
+F 1 "Charge_300mA" V 9445 5818 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9400 5750 50  0001 C CNN
+F 3 "~" H 9400 5750 50  0001 C CNN
+	1    9400 5750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8850 5600 8850 5400
-Wire Wire Line
-	8850 5400 9400 5400
-Connection ~ 9400 5400
-Wire Wire Line
-	8850 5900 9400 5900
-Connection ~ 9400 5900
 Wire Wire Line
 	9400 5900 9400 6200
 $Comp
@@ -1109,4 +884,23 @@ Wire Wire Line
 Wire Wire Line
 	9450 1350 9450 1450
 Connection ~ 9450 1450
+$Comp
+L 0-GIE_SMD_Jumpers:SolderJumper_2_Bridged JP1
+U 1 1 605B68DB
+P 9650 4600
+F 0 "JP1" V 9604 4668 50  0000 L CNN
+F 1 "Charg_enable" V 9695 4668 50  0001 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 9650 4600 50  0001 C CNN
+F 3 "~" H 9650 4600 50  0001 C CNN
+	1    9650 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 4300 9650 4450
+Wire Wire Line
+	9650 4750 9650 4900
+Wire Wire Line
+	9900 6050 9900 6200
+Wire Wire Line
+	9400 5300 9400 5600
 $EndSCHEMATC
